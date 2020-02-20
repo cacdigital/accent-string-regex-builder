@@ -1,6 +1,7 @@
 {
     "name": "cacdigital/accent-string-regex-builder",
-    "description": "Simple library to handle words case transformation from array keys",
+    "description": "Simple helper to create a regex from string to match all the results ignoring accents.",
+    "license": "MIT",
     "keywords": ["accent", "string", "regex"],
     "authors": [
         {
