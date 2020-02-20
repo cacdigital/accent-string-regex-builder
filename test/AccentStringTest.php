@@ -24,10 +24,13 @@ class AccentStringTest extends TestCase
             '[aáàãâä][eéèêë][iíìîï][oóòõôö][uúùûü][cç]',
             AccentString::toRegex('AEIOUC')
         );
-
         $this->assertSame(
             '[aáàãâä] [eéèêë] [iíìîï] [oóòõôö] [uúùûü] [cç]',
             AccentString::toRegex('A E I O U C')
+        );
+        $this->assertSame(
+            'l[oóòõôö]r[eéèêë]m [iíìîï]ps[uúùûü]m s[iíìîï]t [aáàãâä]m[eéèêë]t',
+            AccentString::toRegex('Lorem ipsum sit amet')
         );
     }
 }
