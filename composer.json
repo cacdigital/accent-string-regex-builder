@@ -1,0 +1,38 @@
+{
+    "name": "cacdigital/accent-string-regex-builder",
+    "description": "Simple library to handle words case transformation from array keys",
+    "keywords": ["accent", "string", "regex"],
+    "authors": [
+        {
+            "name": "Victor Pilotto",
+            "email": "victor@cacdigital.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "laminas/laminas-coding-standard": "^1.0",
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "AccentStringRegexBuilder\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "test"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always"
+    }
+}
